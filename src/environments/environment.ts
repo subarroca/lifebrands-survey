@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  idleSecs: 10,
+  questionsUrl: 'assets/data/questions.json',
+  i18nUrl: '/assets/i18n',
+  langs: ['ca', 'es', 'en']
 };

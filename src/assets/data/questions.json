@@ -1,0 +1,41 @@
+{
+  "structures": [
+    "tribe",
+    "feeling1",
+    "feeling2",
+    "contact",
+    "feedback"
+  ],
+  "questions": {
+    "tribe": [
+      {
+        "id":"tribe1",
+        "route": "tribe/1"
+      }
+    ],
+    "feeling1": [
+      {
+        "id":"feeling1",
+        "route":"feeling/1"
+      }
+    ],
+    "feeling2": [
+      {
+        "id":"feeling2",
+        "route":"feeling/2"
+      }
+    ],
+    "contact": [
+      {
+        "id":"contact",
+        "route":"contact"
+      }
+    ],
+    "feedback": [
+      {
+        "id":"feedback",
+        "route":"feedback/1"
+      }
+    ]
+  }
+}
