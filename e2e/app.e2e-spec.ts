@@ -1,10 +1,10 @@
-import { LifebrandsPage } from './app.po';
+import { LinebrandsPage } from './app.po';
 
-describe('lifebrands App', () => {
-  let page: LifebrandsPage;
+describe('linebrands App', () => {
+  let page: LinebrandsPage;
 
   beforeEach(() => {
-    page = new LifebrandsPage();
+    page = new LinebrandsPage();
   });
 
   it('should display message saying app works', () => {
