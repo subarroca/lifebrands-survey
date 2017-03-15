@@ -13,6 +13,8 @@ export class QuestionService {
   questions: QuestionTree;
   currentRound: number;
 
+  answers: any[];
+
   isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
   isLoaded$: Observable<boolean> = this.isLoadedSubject.asObservable();
 
@@ -37,13 +39,13 @@ export class QuestionService {
 
   startRound() {
     this.currentRound = 0;
+    this.answers = [];
   }
 
   get nextQuestion(): Question {
     this.currentRound++;
     const categoryQuestions = this.questions[this.orders[this.currentRound - 1]];
     const selectedQuestion = categoryQuestions[Math.floor(Math.random() * categoryQuestions.length)];
-    console.log(selectedQuestion);
     return selectedQuestion;
   }
 

@@ -5,6 +5,10 @@ import { Observable, Subscription } from 'rxjs/Rx';
 import { TranslateService } from 'ng2-translate';
 import { environment } from '../../../environments/environment';
 
+import { BackendService } from '../backend/backend.service';
+import { QuestionService } from '../question/question.service';
+
+
 @Injectable()
 export class FlowControlService {
   countdown$: Observable<number>;
@@ -12,7 +16,9 @@ export class FlowControlService {
 
   constructor(
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private backendService: BackendService,
+    private questionService: QuestionService
   ) {
     this.reset();
 
@@ -32,5 +38,7 @@ export class FlowControlService {
   reset() {
     this.router.navigate(['/']);
     this.translateService.use(environment.langs[0]);
+    this.backendService.save(this.questionService.answers);
+    this.questionService.startRound();
   }
 }
