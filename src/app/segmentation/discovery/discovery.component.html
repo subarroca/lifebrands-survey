@@ -1,8 +1,15 @@
-<p>
-  discovery works!
-</p>
+<h1>
+  {{'discovery.title' | translate}}
+</h1>
 
-<button
-  (click) = gotoNext()>
-  next
-</button>
+<div
+  fxLayout = row
+  fxLayoutWrap = wrap>
+  <button
+    *ngFor="let answer of answers" 
+    fxFlex = 33
+    (click) = select(answer.id)>
+    {{ answer.label | translate }}
+  </button>
+</div>
+

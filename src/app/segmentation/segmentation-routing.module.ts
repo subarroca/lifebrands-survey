@@ -15,7 +15,6 @@ const routes: Routes = [{
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations: [DiscoveryComponent, SegmentationComponent],
   providers: []
 })
 export class SegmentationRoutingModule { }

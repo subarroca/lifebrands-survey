@@ -7,8 +7,8 @@ button,
   line-height: $tap-size;
   background: $button__background-color;
   color: $button__text-color;
-  margin-right: $grid-gutter;
   text-align: center;
+  margin-right: $grid-gutter;
   border: 0;
 
   &:last-child{

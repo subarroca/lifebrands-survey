@@ -10,11 +10,32 @@ import { ScreenComponent } from '../../shared/screen/screen.component';
   styleUrls: ['./discovery.component.scss']
 })
 export class DiscoveryComponent extends ScreenComponent implements OnInit {
+  answers = [
+    {
+      label: 'discovery.lastYear',
+      id: 'lastYear'
+    }, {
+      label: 'discovery.throughFriend',
+      id: 'throughFriend'
+    }, {
+      label: 'discovery.socialNetwork',
+      id: 'socialNetwork'
+    }, {
+      label: 'discovery.passingBy',
+      id: 'passingBy'
+    }, {
+      label: 'discovery.imFan',
+      id: 'imFan'
+    }];
 
   constructor(
     protected questionService: QuestionService,
     protected router: Router
   ) {
     super(questionService, router);
+  }
+
+  select(id: string) {
+    this.gotoNext();
   }
 }

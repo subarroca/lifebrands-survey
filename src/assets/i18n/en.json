@@ -1,3 +1,9 @@
 {
-  "welcome.title":"Hi!"
+  "welcome.title":"Hi!",
+  "discovery.title":"You discovered the market...",
+  "discovery.lastYear":"Last year",
+  "discovery.throughFriend":"Through a friend",
+  "discovery.socialNetwork":"I found it on a social network",
+  "discovery.passingBy":"I was just  passing by",
+  "discovery.imFan":"You kiddin'? I love photography"
 }
