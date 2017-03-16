@@ -1,0 +1,16 @@
+@import 'src/assets/styles/vars';
+
+lb-language-selector,
+lb-countdown-timer{
+  z-index: 1;
+  position: absolute;
+  bottom: $grid-gutter;
+}
+
+lb-language-selector{
+  right: $grid-gutter;
+}
+
+lb-countdown-timer{
+  left: $grid-gutter;
+}

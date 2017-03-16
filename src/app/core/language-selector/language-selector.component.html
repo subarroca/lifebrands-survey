@@ -1,5 +1,7 @@
-<ul>
+<ul
+  fxLayout = row>
   <li
+    class = "button button--round"
     *ngFor="let lang of langs"
     (click) = changeLang(lang)>
     {{lang}}

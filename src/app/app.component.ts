@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     this.questionService.isLoaded$
       .filter(isLoaded => isLoaded)
       .first()
-      .subscribe(() => this.questionService.nextQuestion);
+      .subscribe(() => true);
 
 
     this.translateService.setDefaultLang(environment.langs[0]);

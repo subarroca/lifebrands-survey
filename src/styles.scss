@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/reset-css/reset';
+
+@import 'assets/styles/vars';
+@import 'assets/styles/partials';
+
+
+html,
+body{
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+
+  font-family: $title__font;
+}

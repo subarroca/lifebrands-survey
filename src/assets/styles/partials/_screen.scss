@@ -1,0 +1,8 @@
+@import '../vars';
+
+.screen{
+  background: $screen__background-color;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}

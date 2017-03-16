@@ -1,4 +1,5 @@
-<span
-  [hidden] = "(countdown|async) > 5 || (countdown|async) === 0">
+<div
+  class = "button button--round"
+  [hidden] = "(countdown|async) > 5 || !(countdown|async)">
   {{countdown | async}}
-</span>
+</div>

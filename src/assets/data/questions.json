@@ -1,40 +1,47 @@
 {
   "structures": [
+    "segmentation",
+    "feelingStep1",
+    "feelingStep2",
     "tribe",
-    "feeling1",
-    "feeling2",
     "contact",
     "feedback"
   ],
   "questions": {
+    "segmentation": [
+      {
+        "id": "segmentation-discovery",
+        "route": "/segmentation/discovery"
+      }
+    ],
     "tribe": [
       {
-        "id":"tribe1",
-        "route": "tribe/1"
+        "id": "tribe-willingToPay",
+        "route": "/tribe/willing-to-pay"
       }
     ],
-    "feeling1": [
+    "feelingStep1": [
       {
-        "id":"feeling1",
-        "route":"feeling/1"
+        "id": "feeling-tagByWord",
+        "route": "/feeling/tag-by-word"
       }
     ],
-    "feeling2": [
+    "feelingStep2": [
       {
-        "id":"feeling2",
-        "route":"feeling/2"
+        "id": "feeling-favourite",
+        "route": "/feeling/favourite"
       }
     ],
     "contact": [
       {
-        "id":"contact",
-        "route":"contact"
+        "id": "contact-email",
+        "route": "/contact/email"
       }
     ],
     "feedback": [
       {
-        "id":"feedback",
-        "route":"feedback/1"
+        "id": "feedback-willingToRepeat",
+        "route": "/feedback/willing-to-repeat"
       }
     ]
   }

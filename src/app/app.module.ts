@@ -11,27 +11,29 @@ import { FeedbackModule } from './feedback/feedback.module';
 import { FeelingModule } from './feeling/feeling.module';
 import { TribeModule } from './tribe/tribe.module';
 import { WelcomeModule } from './welcome/welcome.module';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { SharedModule } from './shared/shared.module';
+import { SegmentationModule } from './segmentation/segmentation.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
     CoreModule,
-    AppRoutingModule,
     ContactModule,
     FeedbackModule,
     FeelingModule,
     TribeModule,
     WelcomeModule,
-    SharedModule
+    SegmentationModule,
+    SharedModule,
+
+
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent]
 })
