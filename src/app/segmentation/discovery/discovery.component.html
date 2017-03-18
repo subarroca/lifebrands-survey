@@ -4,10 +4,12 @@
 
 <div
   fxLayout = row
-  fxLayoutWrap = wrap>
+  fxLayoutAlign = "center center"
+  fxLayoutWrap = wrap
+  fxFlex>
   <button
     *ngFor="let answer of answers" 
-    fxFlex = 33
+    fxFlex = 30
     (click) = select(answer.id)>
     {{ answer.label | translate }}
   </button>

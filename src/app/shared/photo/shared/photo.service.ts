@@ -48,6 +48,10 @@ export class PhotoService {
       .forEach(word => {
         const photos = this.getPhotosByWord(word);
         this.wordPhotos.push(photos[Math.floor(Math.random() * photos.length) % photos.length]);
+
+        // randomize order
+        this.wordPhotos = this.wordPhotos
+          .sort(() => Math.random());
       });
     this.favourite = undefined;
   }

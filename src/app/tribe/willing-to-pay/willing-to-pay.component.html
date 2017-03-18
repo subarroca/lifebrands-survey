@@ -1,21 +1,19 @@
-<div
-  fxLayout = column>
-  <h1>{{ 'willingToPay' | translate}}</h1>
+<h1>{{ 'willingToPay.title' | translate}}</h1>
 
-  <lb-photo
-    fxFlex
-    [photo] = favouritePhoto>
-  </lb-photo>
-  
-  <div
-    fxLayout = row
-    fxLayoutWrap = wrap
-    fxFlex>
-    <button
-      *ngFor="let answer of answers" 
-      fxFlex = 33
-      (click) = select(answer.id)>
-      {{ answer.label | translate }}
-    </button>
-  </div>
+<lb-photo
+  fxFlex
+  fxFlexAlign = center
+  [photo] = favouritePhoto>
+</lb-photo>
+
+<div
+  fxLayout = row
+  fxLayoutAlign = center
+  fxLayoutWrap = wrap>
+  <button
+    *ngFor="let answer of answers" 
+    fxFlex = 30
+    (click) = select(answer.id)>
+    {{ answer.label | translate }}
+  </button>
 </div>

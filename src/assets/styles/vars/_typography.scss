@@ -2,3 +2,12 @@ $title__font: 'Merriweather', serif;
 $content__font: 'Montserrat', sans-serif;
 
 $font-size--small: 0.85em;
+$font-ratio: 1.15;
+
+$font-size--base: 1em;
+$font-size--h6: $font-size--base*$font-ratio;
+$font-size--h5: $font-size--h6*$font-ratio;
+$font-size--h4: $font-size--h5*$font-ratio;
+$font-size--h3: $font-size--h4*$font-ratio;
+$font-size--h2: $font-size--h3*$font-ratio;
+$font-size--h1: $font-size--h2*$font-ratio;

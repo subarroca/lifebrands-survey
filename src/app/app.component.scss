@@ -1,16 +1,24 @@
 @import 'src/assets/styles/vars';
 
+
+:host{
+  padding: 2*$grid-gutter;
+  display: flex;
+  position: relative;
+  height: calc(100vh - #{4*$grid-gutter});
+}
+
 lb-language-selector,
 lb-countdown-timer{
   z-index: 1;
   position: absolute;
-  bottom: $grid-gutter;
+  bottom: 2*$grid-gutter;
 }
 
 lb-language-selector{
-  right: $grid-gutter;
+  right: 2*$grid-gutter;
 }
 
 lb-countdown-timer{
-  left: $grid-gutter;
+  left: 2*$grid-gutter;
 }

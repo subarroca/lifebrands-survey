@@ -17,20 +17,27 @@
 </div>
 
 <div
-  class = words
-  fxLayout = row>
+  fxFlex
+  fxLayout = column
+  fxLayoutAlign = "space-around center">
   <div
-    fxFlex
-    class = "button word"
-    [class.selected] = "selectedWord === word"
-    [class.disabled] = isAlreadyMatchedWord(word)
-    (click) = selectWord(word)
-    *ngFor = "let word of words">
-    {{ 'photo.word.'+word | translate }}
+    class = words
+    fxLayout = row
+    fxLayoutWrap = wrap
+    fxLayoutAlign = "center center">
+    <div
+      fxFlex = 35
+      class = "button word"
+      [class.selected] = "selectedWord === word"
+      [class.disabled] = isAlreadyMatchedWord(word)
+      (click) = selectWord(word)
+      *ngFor = "let word of words">
+      {{ 'photo.word.'+word | translate }}
+    </div>
   </div>
+  
+  <button
+    (click) = reset()>
+    {{'btn.reset' | translate}}
+  </button>
 </div>
-
-<button
-  (click) = reset()>
-  {{'btn.reset' | translate}}
-</button>

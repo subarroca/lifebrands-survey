@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HolderComponent } from '../../shared/holder/holder.component';
+
 @Component({
   selector: 'lb-tribe',
   templateUrl: './tribe.component.html',
   styleUrls: ['./tribe.component.scss']
 })
-export class TribeComponent implements OnInit {
+export class TribeComponent extends HolderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   ngOnInit() {
+    super.ngOnInit();
   }
 
 }
