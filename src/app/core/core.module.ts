@@ -11,10 +11,10 @@ import { BackendModule } from './backend/backend.module';
     LanguageSelectorModule,
     QuestionModule,
     FlowControlModule,
-    BackendModule
+    BackendModule,
   ],
   exports: [
     LanguageSelectorModule
-  ]
+  ],
 })
 export class CoreModule { }

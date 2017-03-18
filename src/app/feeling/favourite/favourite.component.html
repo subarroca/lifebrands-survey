@@ -1,8 +1,15 @@
-<p>
-  favourite works!
-</p>
+<h1>
+  {{ 'favourite.title' | translate }}
+</h1>
 
-<button
-  (click) = gotoNext()>
-  next
-</button>
+<div
+  class = photos
+  fxLayout = row
+  fxLayoutAlign = "start center">
+  <lb-photo
+    (click) = selectPhoto(photo)
+    fxFlex = 25
+    *ngFor = "let photo of photos"
+    [photo] = photo>
+  </lb-photo>
+</div>

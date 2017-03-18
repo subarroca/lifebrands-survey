@@ -1,9 +1,17 @@
 {
-  "welcome.title":"Hi!",
-  "discovery.title":"You discovered the market...",
-  "discovery.lastYear":"Last year",
-  "discovery.throughFriend":"Through a friend",
-  "discovery.socialNetwork":"I found it on a social network",
-  "discovery.passingBy":"I was just  passing by",
-  "discovery.imFan":"You kiddin'? I love photography"
+  "btn.reset": "reset",
+  "discovery.imFan": "You kiddin'? I love photography",
+  "discovery.lastYear": "Last year",
+  "discovery.passingBy": "I was just  passing by",
+  "discovery.socialNetwork": "I found it on a social network",
+  "discovery.throughFriend": "Through a friend",
+  "discovery.title": "You discovered the market...",
+  "favourite.title": "Which one represents you best?",
+  "photo.anonymus": "Anonymus",
+  "photo.word.classic": "classic",
+  "photo.word.creative": "creative",
+  "photo.word.extrovert": "extrovert",
+  "photo.word.inspiring": "inspiring",
+  "tagByWord.title": "Let's assign a word to a photo",
+  "welcome.title": "Hi!"
 }

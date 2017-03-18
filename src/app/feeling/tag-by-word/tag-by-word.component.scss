@@ -1,0 +1,10 @@
+@import 'src/assets/styles/vars';
+
+.words{
+  .selected{
+    background: $highlight-color;
+  }
+  .disabled{
+    opacity: .4;
+  }
+}

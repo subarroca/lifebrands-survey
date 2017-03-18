@@ -1,3 +1,17 @@
 {
+  "btn.reset": "reinicia",
+  "discovery.imFan": "estàs de conya, oi? M'encanta la fotografia",
+  "discovery.lastYear": "l'any passat",
+  "discovery.passingBy": "passant per aquí",
+  "discovery.socialNetwork": "a les xarxes socials",
+  "discovery.throughFriend": "a través d'un amic",
+  "discovery.title": "Has descobert el mercat...",
+  "favourite.title": "Quina et representa millor?",
+  "photo.anonymus": "Anònim",
+  "photo.word.classic": "clàssic",
+  "photo.word.creative": "creatiu",
+  "photo.word.extrovert": "extravertit",
+  "photo.word.inspiring": "inspirador",
+  "tagByWord.title": "Etiqueta cada foto amb una paraula",
   "welcome.title":"Iep!"
 }

@@ -45,8 +45,8 @@ export class QuestionService {
   get nextQuestion(): Question {
     if (this.currentRound !== this.orders.length) {
       this.currentRound++;
-      const categoryQuestions = this.questions[this.orders[this.currentRound - 1]];
-      const selectedQuestion = categoryQuestions[Math.floor(Math.random() * categoryQuestions.length)];
+      const wordQuestions = this.questions[this.orders[this.currentRound - 1]];
+      const selectedQuestion = wordQuestions[Math.floor(Math.random() * wordQuestions.length)];
       return selectedQuestion;
     }
   }

@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 
 import { QuestionService } from '../../core/question/question.service';
 import { ScreenComponent } from '../../shared/screen/screen.component';
+import { PhotoService } from '../../shared/photo/shared/photo.service';
+import { Photo } from '../../shared/photo/shared/photo';
 
 @Component({
   selector: 'lb-tag-by-word',
@@ -10,11 +12,79 @@ import { ScreenComponent } from '../../shared/screen/screen.component';
   styleUrls: ['./tag-by-word.component.scss']
 })
 export class TagByWordComponent extends ScreenComponent implements OnInit {
+  words: string[];
+  photos: Photo[];
+  matches;
+
+  selectedWord: string;
+  selectedPhoto: string;
 
   constructor(
     protected questionService: QuestionService,
+    protected photoService: PhotoService,
     protected router: Router
   ) {
     super(questionService, router);
+  }
+
+  ngOnInit() {
+    super.ngOnInit();
+
+    this.photoService.isLoaded$
+      .filter(isLoaded => isLoaded)
+      .first()
+      .subscribe(() => {
+        this.photoService.randomizeWordPhotos();
+        this.photos = this.photoService.wordPhotos;
+        this.words = this.photoService.words;
+        this.reset();
+      });
+
+  }
+
+  get isAllSelected() {
+    return (<any>Object)
+      .values(this.matches)
+      .filter(match => match)
+      .length === this.words.length;
+  }
+
+  selectWord(word: string) {
+    this.selectedWord = word;
+    this.match();
+  }
+
+  selectPhoto(photo: Photo) {
+    this.selectedPhoto = photo.id;
+    this.match();
+  }
+
+  match() {
+    if (this.selectedWord && this.selectedPhoto) {
+      this.matches[this.selectedWord] = this.selectedPhoto;
+      this.selectedWord = undefined;
+      this.selectedPhoto = undefined;
+
+      if (this.isAllSelected) {
+        this.gotoNext();
+      }
+    }
+  }
+
+  reset() {
+    this.matches = {};
+    this.words.forEach(word => this.matches[word] = undefined);
+    this.selectedWord = undefined;
+    this.selectedPhoto = undefined;
+  }
+
+  isAlreadyMatchedPhoto(photo: Photo) {
+    return (<any>Object)
+      .values(this.matches)
+      .includes(photo.id);
+  }
+
+  isAlreadyMatchedWord(word: string) {
+    return !!this.matches[word];
   }
 }

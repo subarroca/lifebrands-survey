@@ -1,15 +1,18 @@
 @import '../vars';
 
+$button-size: $tap-size - 2*$grid-gutter;
+
 button,
 .button{
-  min-height: $tap-size;
-  min-width: $tap-size;
-  line-height: $tap-size;
+  min-height: $button-size;
+  min-width: $button-size;
+  line-height: $button-size;
   background: $button__background-color;
   color: $button__text-color;
   text-align: center;
   margin-right: $grid-gutter;
   border: 0;
+  padding: $grid-gutter;
 
   &:last-child{
     margin-right: 0;
@@ -18,5 +21,5 @@ button,
 
 .button--round{
   border-radius: $tap-size/2;
-  width: $tap-size;
+  width: $button-size;
 }

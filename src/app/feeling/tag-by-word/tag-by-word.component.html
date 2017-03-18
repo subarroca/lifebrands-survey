@@ -1,8 +1,36 @@
-<p>
-  tag-by-word works!
-</p>
+<h1>
+  {{ 'tagByWord.title' | translate }}
+</h1>
+
+<div
+  class = photos
+  fxLayout = row
+  fxLayoutAlign = "start center">
+  <lb-photo
+    [selected] = "selectedPhoto === photo.id"
+    [disabled] = isAlreadyMatchedPhoto(photo)
+    (click) = selectPhoto(photo)
+    fxFlex = 25
+    *ngFor = "let photo of photos"
+    [photo] = photo>
+  </lb-photo>
+</div>
+
+<div
+  class = words
+  fxLayout = row>
+  <div
+    fxFlex
+    class = "button word"
+    [class.selected] = "selectedWord === word"
+    [class.disabled] = isAlreadyMatchedWord(word)
+    (click) = selectWord(word)
+    *ngFor = "let word of words">
+    {{ 'photo.word.'+word | translate }}
+  </div>
+</div>
 
 <button
-  (click) = gotoNext()>
-  next
+  (click) = reset()>
+  {{'btn.reset' | translate}}
 </button>

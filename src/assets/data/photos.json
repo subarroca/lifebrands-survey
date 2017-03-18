@@ -1,0 +1,62 @@
+[
+  {
+    "word": "classic",
+    "id": "classic-trius",
+    "author": "Guillem Trius",
+    "path": "classic-trius.jpg"
+  },
+  {
+    "word": "classic",
+    "id": "classic-revenants",
+    "author": "Les revenants",
+    "path": "classic-revenants.jpg"
+  },
+  {
+    "word": "classic",
+    "id": "classic-unnamed",
+    "author": "photo.anonymus",
+    "path": "classic-unnamed.jpg"
+  },
+  {
+    "word": "creative",
+    "id": "creative-guillamon",
+    "author": "Raúl Guillamón",
+    "path": "creative-guillamon.jpg"
+  },
+  {
+    "word": "creative",
+    "id": "creative-gregor",
+    "author": "Sasha R Gregor",
+    "path": "creative-gregor.jpg"
+  },
+  {
+    "word": "creative",
+    "id": "creative-bou",
+    "author": "Xavi Bou",
+    "path": "creative-bou.jpg"
+  },
+  {
+    "word": "extrovert",
+    "id": "extrovert-trius",
+    "author": "Guillem Trius",
+    "path": "extrovert-trius.jpg"
+  },
+  {
+    "word": "extrovert",
+    "id": "extrovert-lopez-torres",
+    "author": "Núria López Torres",
+    "path": "extrovert-lopez-torres.jpg"
+  },
+  {
+    "word": "inspiring",
+    "id": "inspiring-244",
+    "author": "244",
+    "path": "inspiring-244.jpg"
+  },
+  {
+    "word": "inspiring",
+    "id": "inspiring-queralt",
+    "author": "Lluc Queralt",
+    "path": "inspiring-queralt.jpg"
+  }
+]

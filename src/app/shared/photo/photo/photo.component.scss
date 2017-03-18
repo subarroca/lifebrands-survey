@@ -1,0 +1,27 @@
+@import 'src/assets/styles/vars';
+
+
+:host{
+  padding: $grid-gutter;
+  font-family: $content__font;
+}
+
+img{
+  width: 100%;
+  border: $photo-frame--size solid $photo__background-color;
+  box-shadow: $photo-shadow--size $photo__shadow-color;
+  
+  :host(.selected) &{
+    border-color: $highlight-color;
+  }
+  
+  :host(.disabled) &{
+    opacity: .4;
+  }
+}
+
+.author{
+  padding: $grid-gutter/2;
+  display: inline-block;
+  font-size: $font-size--small;
+}
