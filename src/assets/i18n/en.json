@@ -13,5 +13,11 @@
   "photo.word.extrovert": "extrovert",
   "photo.word.inspiring": "inspiring",
   "tagByWord.title": "Let's assign a word to a photo",
-  "welcome.title": "Hi!"
+  "welcome.title": "Hi!",
+  "willingToPay.title": "To take it home I would pay as much as...",
+  "willingToPay.nothing": "nothing",
+  "willingToPay.dinner": "a dinner",
+  "willingToPay.photoCamera": "a photo camera",
+  "willingToPay.exoticTrip": "an exotic trip",
+  "willingToPay.masterPiece": "a master piece"
 }

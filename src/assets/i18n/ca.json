@@ -13,5 +13,11 @@
   "photo.word.extrovert": "extravertit",
   "photo.word.inspiring": "inspirador",
   "tagByWord.title": "Etiqueta cada foto amb una paraula",
-  "welcome.title":"Iep!"
+  "welcome.title": "Iep!",
+  "willingToPay.title": "Per endur-me-la a casa pagaria tant com...",
+  "willingToPay.nothing": "res",
+  "willingToPay.dinner": "un sopar",
+  "willingToPay.photoCamera": "una càmera de fotos",
+  "willingToPay.exoticTrip": "un viatge exòtic",
+  "willingToPay.masterPiece": "una obra d'art"
 }

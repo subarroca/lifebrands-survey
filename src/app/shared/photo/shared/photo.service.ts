@@ -10,6 +10,7 @@ import { Photo } from './photo';
 export class PhotoService {
   photos: Photo[];
   wordPhotos: Photo[];
+  favourite: Photo;
 
   isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
   isLoaded$: Observable<boolean> = this.isLoadedSubject.asObservable();
@@ -41,13 +42,18 @@ export class PhotoService {
       .filter(photo => photo.word === word);
   }
 
-  randomizeWordPhotos() {
+  reset() {
     this.wordPhotos = [];
     this.words
       .forEach(word => {
         const photos = this.getPhotosByWord(word);
         this.wordPhotos.push(photos[Math.floor(Math.random() * photos.length) % photos.length]);
       });
+    this.favourite = undefined;
+  }
+
+  selectFavourite(photo: Photo) {
+    this.favourite = photo;
   }
 
 }

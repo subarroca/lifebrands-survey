@@ -1,9 +1,10 @@
-import { OnInit } from '@angular/core';
+import { OnInit, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { QuestionService } from '../../core/question/question.service';
 
 export class ScreenComponent implements OnInit {
+  @HostBinding('class.screen') screenClass = true;
 
   constructor(
     protected questionService: QuestionService,

@@ -34,7 +34,7 @@ export class TagByWordComponent extends ScreenComponent implements OnInit {
       .filter(isLoaded => isLoaded)
       .first()
       .subscribe(() => {
-        this.photoService.randomizeWordPhotos();
+        this.photoService.reset();
         this.photos = this.photoService.wordPhotos;
         this.words = this.photoService.words;
         this.reset();

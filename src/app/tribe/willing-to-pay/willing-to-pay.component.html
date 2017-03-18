@@ -1,8 +1,21 @@
-<p>
-  willing-to-pay works!
-</p>
+<div
+  fxLayout = column>
+  <h1>{{ 'willingToPay' | translate}}</h1>
 
-<button
-  (click) = gotoNext()>
-  next
-</button>
+  <lb-photo
+    fxFlex
+    [photo] = favouritePhoto>
+  </lb-photo>
+  
+  <div
+    fxLayout = row
+    fxLayoutWrap = wrap
+    fxFlex>
+    <button
+      *ngFor="let answer of answers" 
+      fxFlex = 33
+      (click) = select(answer.id)>
+      {{ answer.label | translate }}
+    </button>
+  </div>
+</div>
