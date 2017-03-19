@@ -3,60 +3,70 @@
     "word": "classic",
     "id": "classic-trius",
     "author": "Guillem Trius",
-    "path": "classic-trius.jpg"
+    "path": "classic-trius.jpg",
+    "color": "#30f"
   },
   {
     "word": "classic",
     "id": "classic-revenants",
     "author": "Les revenants",
-    "path": "classic-revenants.jpg"
+    "path": "classic-revenants.jpg",
+    "color": "#30f"
   },
   {
     "word": "classic",
     "id": "classic-unnamed",
     "author": "photo.anonymus",
-    "path": "classic-unnamed.jpg"
+    "path": "classic-unnamed.jpg",
+    "color": "#30f"
   },
   {
     "word": "creative",
     "id": "creative-guillamon",
     "author": "Raúl Guillamón",
-    "path": "creative-guillamon.jpg"
+    "path": "creative-guillamon.jpg",
+    "color": "#f03"
   },
   {
     "word": "creative",
     "id": "creative-gregor",
     "author": "Sasha R Gregor",
-    "path": "creative-gregor.jpg"
+    "path": "creative-gregor.jpg",
+    "color": "#f03"
   },
   {
     "word": "creative",
     "id": "creative-bou",
     "author": "Xavi Bou",
-    "path": "creative-bou.jpg"
+    "path": "creative-bou.jpg",
+    "color": "#f03"
   },
   {
     "word": "extrovert",
     "id": "extrovert-trius",
     "author": "Guillem Trius",
-    "path": "extrovert-trius.jpg"
+    "path": "extrovert-trius.jpg",
+    "color": "#03f"
   },
   {
     "word": "extrovert",
     "id": "extrovert-lopez-torres",
     "author": "Núria López Torres",
-    "path": "extrovert-lopez-torres.jpg"
+    "path": "extrovert-lopez-torres.jpg",
+    "color": "#03f"
   },
   {
     "word": "inspiring",
     "id": "inspiring-244",
     "author": "244",
-    "path": "inspiring-244.jpg"
+    "path": "inspiring-244.jpg",
+    "color": "#0f3"
   },
   {
     "word": "inspiring",
     "id": "inspiring-queralt",
     "author": "Lluc Queralt",
-    "path": "inspiring-queralt.jpg"
+    "path": "inspiring-queralt.jpg",
+    "color": "#0f3"
   }
 ]

@@ -17,6 +17,10 @@ button,
   &:last-child{
     margin-right: 0;
   }
+
+  &.selected{
+    background: $highlight-color;
+  }
 }
 
 .button--round{

@@ -10,10 +10,12 @@ import { Photo } from './photo';
 export class PhotoService {
   photos: Photo[];
   wordPhotos: Photo[];
-  favourite: Photo;
 
-  isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  private isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
   isLoaded$: Observable<boolean> = this.isLoadedSubject.asObservable();
+
+  private favouriteSubject: BehaviorSubject<Photo> = new BehaviorSubject(undefined);
+  favourite$: Observable<Photo> = this.favouriteSubject.asObservable();
 
   constructor(
     private http: Http
@@ -53,11 +55,12 @@ export class PhotoService {
         this.wordPhotos = this.wordPhotos
           .sort(() => Math.random());
       });
-    this.favourite = undefined;
+    this.favouriteSubject.next(undefined);
   }
 
   selectFavourite(photo: Photo) {
-    this.favourite = photo;
+    console.log(photo);
+    this.favouriteSubject.next(photo);
   }
 
 }

@@ -5,5 +5,6 @@ export const environment = {
   photosUrl: 'assets/data/photos.json',
   photosPath: 'assets/photos',
   i18nUrl: '/assets/i18n',
-  langs: ['ca', 'es', 'en']
+  langs: ['ca', 'es', 'en', 'fr', 'it'],
+  mainLang: 'ca'
 };

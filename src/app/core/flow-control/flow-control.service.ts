@@ -14,6 +14,8 @@ export class FlowControlService {
   countdown$: Observable<number>;
   private countdown$$: Subscription;
 
+  currentLang: string;
+
   constructor(
     private router: Router,
     private translateService: TranslateService,
@@ -35,10 +37,19 @@ export class FlowControlService {
       });
   }
 
+  setLang(lang: string) {
+    this.currentLang = lang;
+    this.translateService.use(lang);
+  }
+
   reset() {
     this.router.navigate(['/']);
-    this.translateService.use(environment.langs[0]);
+    this.setLang(environment.mainLang);
     this.backendService.save(this.questionService.answers);
     this.questionService.startRound();
+  }
+
+  isWelcomePage() {
+    return this.router.isActive('welcome', false);
   }
 }

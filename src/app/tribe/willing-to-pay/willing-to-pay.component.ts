@@ -44,11 +44,10 @@ export class WillingToPayComponent extends ScreenComponent implements OnInit {
   ngOnInit() {
     super.ngOnInit();
 
-    this.photoService.isLoaded$
-      .filter(isLoaded => isLoaded)
+    this.photoService.favourite$
       .first()
-      .subscribe(() => {
-        this.favouritePhoto = this.photoService.favourite;
+      .subscribe((photo) => {
+        this.favouritePhoto = photo;
       });
   }
 

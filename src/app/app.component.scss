@@ -6,10 +6,11 @@
   display: flex;
   position: relative;
   height: calc(100vh - #{4*$grid-gutter});
+  transition: background 1s;
 }
 
 lb-language-selector,
-lb-countdown-timer{
+.controls{
   z-index: 1;
   position: absolute;
   bottom: 2*$grid-gutter;
@@ -19,6 +20,10 @@ lb-language-selector{
   right: 2*$grid-gutter;
 }
 
-lb-countdown-timer{
+.controls{
   left: 2*$grid-gutter;
+}
+
+lb-countdown-timer{
+  margin-bottom: $grid-gutter;
 }

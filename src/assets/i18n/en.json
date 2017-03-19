@@ -1,11 +1,14 @@
 {
   "btn.reset": "reset",
+  "btn.start": "start",
   "discovery.imFan": "You kiddin'? I love photography",
   "discovery.lastYear": "Last year",
   "discovery.passingBy": "I was just  passing by",
   "discovery.socialNetwork": "I found it on a social network",
   "discovery.throughFriend": "Through a friend",
   "discovery.title": "You discovered the market...",
+  "email.skip": "I don't wanna know",
+  "email.title": "Wanna know what others thought about your photo? Leave us your email",
   "favourite.title": "Which one represents you best?",
   "photo.anonymus": "Anonymus",
   "photo.word.classic": "classic",
@@ -14,10 +17,10 @@
   "photo.word.inspiring": "inspiring",
   "tagByWord.title": "Let's assign a word to a photo",
   "welcome.title": "Hi!",
-  "willingToPay.title": "To take it home I would pay as much as...",
-  "willingToPay.nothing": "nothing",
   "willingToPay.dinner": "a dinner",
-  "willingToPay.photoCamera": "a photo camera",
   "willingToPay.exoticTrip": "an exotic trip",
-  "willingToPay.masterPiece": "a master piece"
+  "willingToPay.masterPiece": "a master piece",
+  "willingToPay.nothing": "nothing",
+  "willingToPay.photoCamera": "a photo camera",
+  "willingToPay.title": "To take it home I would pay as much as..."
 }

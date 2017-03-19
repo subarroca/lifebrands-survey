@@ -15,8 +15,11 @@ export class QuestionService {
 
   answers: any[];
 
-  isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  private isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
   isLoaded$: Observable<boolean> = this.isLoadedSubject.asObservable();
+
+  private currentQuestionSubject: BehaviorSubject<Question> = new BehaviorSubject(undefined);
+  currentQuestion$: Observable<Question> = this.currentQuestionSubject.asObservable();
 
   constructor(
     private http: Http
@@ -40,6 +43,7 @@ export class QuestionService {
   startRound() {
     this.currentRound = 0;
     this.answers = [];
+    this.currentQuestionSubject.next(undefined);
   }
 
   get nextQuestion(): Question {
@@ -47,6 +51,7 @@ export class QuestionService {
       this.currentRound++;
       const wordQuestions = this.questions[this.orders[this.currentRound - 1]];
       const selectedQuestion = wordQuestions[Math.floor(Math.random() * wordQuestions.length)];
+      this.currentQuestionSubject.next(selectedQuestion);
       return selectedQuestion;
     }
   }

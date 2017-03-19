@@ -1,6 +1,17 @@
 <router-outlet></router-outlet>
 
 <lb-language-selector></lb-language-selector>
-<lb-countdown-timer
-  [countdown] = idleCountdown$>
-</lb-countdown-timer>
+
+<div
+  class = controls>
+  <lb-countdown-timer
+    [countdown] = idleCountdown$>
+  </lb-countdown-timer>
+
+  <div
+    class = "button button--round"
+    *ngIf = !shouldHideStartButton
+    (click) = reset()>
+    {{'btn.start'| translate}}
+  </div>
+</div>
