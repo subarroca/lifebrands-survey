@@ -1,9 +1,13 @@
 <h1>{{'email.title' | translate}}</h1>
-
-<input
-  type = email>
+  
+<div>
+  <h3>{{'email.subtitle' | translate}}</h3>
+  <input
+    type = email>
+</div>
 
 <button
+  fxFlexAlign = center
   (click) = gotoNext()>
   {{'email.skip' | translate}}
 </button>

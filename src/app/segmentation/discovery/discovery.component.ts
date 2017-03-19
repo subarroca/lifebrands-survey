@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 import { QuestionService } from '../../core/question/question.service';
 import { ScreenComponent } from '../../shared/screen/screen.component';
+import { FlowControlService } from '../../core/flow-control/flow-control.service';
 
 @Component({
   selector: 'lb-discovery',
@@ -29,10 +30,11 @@ export class DiscoveryComponent extends ScreenComponent implements OnInit {
     }];
 
   constructor(
+    protected flowControlService: FlowControlService,
     protected questionService: QuestionService,
     protected router: Router
   ) {
-    super(questionService, router);
+    super(flowControlService, questionService, router);
   }
 
   select(id: string) {

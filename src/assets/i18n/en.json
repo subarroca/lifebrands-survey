@@ -8,7 +8,8 @@
   "discovery.throughFriend": "Through a friend",
   "discovery.title": "You discovered the market...",
   "email.skip": "I don't wanna know",
-  "email.title": "Wanna know what others thought about your photo? Leave us your email",
+  "email.title": "Wanna know what others thought about your photo?",
+  "email.subtitle": "Leave us your email",
   "favourite.title": "Which one represents you best?",
   "photo.anonymus": "Anonymus",
   "photo.word.classic": "classic",
@@ -22,5 +23,10 @@
   "willingToPay.masterPiece": "a master piece",
   "willingToPay.nothing": "nothing",
   "willingToPay.photoCamera": "a photo camera",
-  "willingToPay.title": "To take it home I would pay as much as..."
+  "willingToPay.title": "To take it home I would pay as much as...",
+  "willingToRepeat.dunno": "who knows?",
+  "willingToRepeat.nextMarket": "next market",
+  "willingToRepeat.subtitle": "See you again...",
+  "willingToRepeat.theseDays": "these days",
+  "willingToRepeat.title": "Thanks!"
 }

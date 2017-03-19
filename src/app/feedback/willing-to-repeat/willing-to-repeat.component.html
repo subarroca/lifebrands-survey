@@ -1,8 +1,20 @@
-<p>
-  willing-to-repeat works!
-</p>
-
-<button
-  (click) = gotoNext()>
-  next
-</button>
+<h1>{{'willingToRepeat.title' | translate}}</h1>
+  
+<div
+  fxLayoutAlign = "center stretch"
+  fxLayout = column
+  fxFlex>
+  <h3>{{'willingToRepeat.subtitle' | translate}}</h3>
+  
+  <div
+    fxLayout = row
+    fxLayoutAlign = "center center"
+    fxLayoutWrap = wrap>
+    <button
+      *ngFor="let answer of answers" 
+      fxFlex = 30
+      (click) = select(answer.id)>
+      {{ answer.label | translate }}
+    </button>
+  </div>
+</div>

@@ -8,7 +8,8 @@
   "discovery.throughFriend": "a través d'un amic",
   "discovery.title": "Has descobert el mercat...",
   "email.skip": "No ho vull saber",
-  "email.title": "Vols saber què en pensen els altres de la teva foto? Deixa'ns el teu correu",
+  "email.title": "Vols saber què en pensen els altres de la teva foto?",
+  "email.subtitle": "Deixa'ns el teu correu",
   "favourite.title": "Quina et representa millor?",
   "photo.anonymus": "Anònim",
   "photo.word.classic": "clàssic",
@@ -22,5 +23,10 @@
   "willingToPay.masterPiece": "una obra d'art",
   "willingToPay.nothing": "res",
   "willingToPay.photoCamera": "una càmera de fotos",
-  "willingToPay.title": "Per endur-me-la a casa pagaria tant com..."
+  "willingToPay.title": "Per endur-me-la a casa pagaria tant com...",
+  "willingToRepeat.dunno": "qui ho sap?",
+  "willingToRepeat.nextMarket": "al proper market",
+  "willingToRepeat.subtitle": "Ens tornem a veure...",
+  "willingToRepeat.theseDays": "aquests dies",
+  "willingToRepeat.title": "Moltes gràcies!"
 }

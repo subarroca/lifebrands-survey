@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { QuestionService } from '../../core/question/question.service';
 import { ScreenComponent } from '../../shared/screen/screen.component';
 import { PhotoService } from '../../shared/photo/shared/photo.service';
+import { FlowControlService } from '../../core/flow-control/flow-control.service';
 import { Photo } from '../../shared/photo/shared/photo';
 
 @Component({
@@ -34,11 +35,12 @@ export class WillingToPayComponent extends ScreenComponent implements OnInit {
   favouritePhoto: Photo;
 
   constructor(
+    protected flowControlService: FlowControlService,
     protected questionService: QuestionService,
     protected photoService: PhotoService,
     protected router: Router
   ) {
-    super(questionService, router);
+    super(flowControlService, questionService, router);
   }
 
   ngOnInit() {
