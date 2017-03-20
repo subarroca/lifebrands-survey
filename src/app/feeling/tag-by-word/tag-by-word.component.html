@@ -5,7 +5,7 @@
 <div
   class = photos
   fxLayout = row
-  fxLayoutAlign = "start center">
+  fxLayoutAlign = "center center">
   <lb-photo
     [selected] = "selectedPhoto === photo.id"
     [disabled] = isAlreadyMatchedPhoto(photo)
@@ -17,7 +17,6 @@
 </div>
 
 <div
-  fxFlex
   fxLayout = column
   fxLayoutAlign = "space-around center">
   <div

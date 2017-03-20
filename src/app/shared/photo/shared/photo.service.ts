@@ -45,16 +45,22 @@ export class PhotoService {
   }
 
   reset() {
-    this.wordPhotos = [];
+    // set an empty array to randomize later
+    this.wordPhotos = this.words.map(() => undefined);
+    const wordPhotos = [];
     this.words
       .forEach(word => {
         const photos = this.getPhotosByWord(word);
-        this.wordPhotos.push(photos[Math.floor(Math.random() * photos.length) % photos.length]);
-
-        // randomize order
-        this.wordPhotos = this.wordPhotos
-          .sort(() => Math.random());
+        wordPhotos.push(photos[Math.floor(Math.random() * photos.length) % photos.length]);
       });
+
+    // randomize order
+    const order = this.words
+      .map((value, i) => { return { i: i, val: Math.random() }; })
+      .sort((a, b) => a.val > b.val ? 1 : -1);
+
+    order.map((val, i) => this.wordPhotos[val.i] = wordPhotos[i]);
+
     this.favouriteSubject.next(undefined);
   }
 

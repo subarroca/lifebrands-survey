@@ -4,11 +4,17 @@
 :host{
   padding: $grid-gutter;
   font-family: $content__font;
+  display: flex;
+  height: 100%;
+}
+
+figure,
+img{
+  max-height: 100%;
+  max-width: 100%;
 }
 
 img{
-  max-width: 100%;
-  max-height: 50vh;
   border: $photo-frame--size solid $photo__background-color;
   box-shadow: $photo-shadow--size $photo__shadow-color;
   
@@ -25,6 +31,7 @@ img{
 
 figure{
   position: relative;
+  text-align: center;
   
   :host(.disabled) &{
     opacity: .4;
@@ -32,9 +39,10 @@ figure{
 }
 
 figcaption{
-  position: absolute;
   background: $photo__background-color;
-  bottom: $photo-frame--size;
+  position: relative;
+  top: -3*$grid-gutter;
+  display: inline-block;
 
   :host(.selected) &{
     background: $highlight-color;
