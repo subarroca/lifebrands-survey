@@ -25,14 +25,12 @@ export class WillingToRepeatComponent extends ScreenComponent implements OnInit 
 
 
   constructor(
-    protected flowControlService: FlowControlService,
-    protected questionService: QuestionService,
-    protected router: Router
+    protected flowControlService: FlowControlService
   ) {
-    super(flowControlService, questionService, router);
+    super(flowControlService);
   }
 
   select(id: string) {
-    this.gotoNext();
+    this.answer(id);
   }
 }

@@ -13,10 +13,8 @@ import { FlowControlService } from '../../core/flow-control/flow-control.service
 export class EmailComponent extends ScreenComponent implements OnInit {
 
   constructor(
-    protected flowControlService: FlowControlService,
-    protected questionService: QuestionService,
-    protected router: Router
+    protected flowControlService: FlowControlService
   ) {
-    super(flowControlService, questionService, router);
+    super(flowControlService);
   }
 }

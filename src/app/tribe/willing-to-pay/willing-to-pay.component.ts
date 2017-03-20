@@ -36,11 +36,9 @@ export class WillingToPayComponent extends ScreenComponent implements OnInit {
 
   constructor(
     protected flowControlService: FlowControlService,
-    protected questionService: QuestionService,
-    protected photoService: PhotoService,
-    protected router: Router
+    protected photoService: PhotoService
   ) {
-    super(flowControlService, questionService, router);
+    super(flowControlService);
   }
 
   ngOnInit() {
@@ -54,6 +52,6 @@ export class WillingToPayComponent extends ScreenComponent implements OnInit {
   }
 
   select(id: string) {
-    this.gotoNext();
+    this.answer(id);
   }
 }

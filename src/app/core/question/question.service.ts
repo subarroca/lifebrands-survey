@@ -13,13 +13,15 @@ export class QuestionService {
   questions: QuestionTree;
   currentRound: number;
 
-  answers: any[];
-
   private isLoadedSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
   isLoaded$: Observable<boolean> = this.isLoadedSubject.asObservable();
 
   private currentQuestionSubject: BehaviorSubject<Question> = new BehaviorSubject(undefined);
   currentQuestion$: Observable<Question> = this.currentQuestionSubject.asObservable();
+
+  private questionProgressSubject: BehaviorSubject<{ current: number, total: number }>
+  = new BehaviorSubject({ current: 0, total: 1 });
+  questionProgress$: Observable<{ current: number, total: number }> = this.questionProgressSubject.asObservable();
 
   constructor(
     private http: Http
@@ -42,13 +44,14 @@ export class QuestionService {
 
   startRound() {
     this.currentRound = 0;
-    this.answers = [];
     this.currentQuestionSubject.next(undefined);
+    this.questionProgressSubject.next({ current: 0, total: this.orders ? this.orders.length : 1 });
   }
 
   get nextQuestion(): Question {
     if (this.currentRound !== this.orders.length) {
       this.currentRound++;
+      this.questionProgressSubject.next({ current: this.currentRound, total: this.orders.length });
       const wordQuestions = this.questions[this.orders[this.currentRound - 1]];
       const selectedQuestion = wordQuestions[Math.floor(Math.random() * wordQuestions.length)];
       this.currentQuestionSubject.next(selectedQuestion);

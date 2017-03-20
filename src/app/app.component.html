@@ -9,9 +9,11 @@
   </lb-countdown-timer>
 
   <div
-    class = "button button--round"
+    class = "button button--round start"
     *ngIf = !shouldHideStartButton
     (click) = reset()>
     {{'btn.start'| translate}}
   </div>
 </div>
+
+<lb-steps></lb-steps>

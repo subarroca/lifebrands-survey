@@ -8,22 +8,14 @@ export class ScreenComponent implements OnInit {
   @HostBinding('class.screen') screenClass = true;
 
   constructor(
-    protected flowControlService: FlowControlService,
-    protected questionService: QuestionService,
-    protected router: Router
+    protected flowControlService: FlowControlService
   ) { }
 
   ngOnInit() {
   }
 
-
-  gotoNext() {
-    const next = this.questionService.nextQuestion;
-
-    if (next) {
-      this.router.navigate([next.route]);
-    } else {
-      this.flowControlService.reset();
-    }
+  answer(answer?: any) {
+    this.flowControlService.answer(answer);
+    this.flowControlService.next();
   }
 }

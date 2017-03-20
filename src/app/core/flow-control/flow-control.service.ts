@@ -5,8 +5,8 @@ import { Observable, Subscription } from 'rxjs/Rx';
 import { TranslateService } from 'ng2-translate';
 import { environment } from '../../../environments/environment';
 
-import { BackendService } from '../backend/backend.service';
 import { QuestionService } from '../question/question.service';
+import { AnswerService } from '../answer/answer.service';
 
 
 @Injectable()
@@ -15,12 +15,13 @@ export class FlowControlService {
   private countdown$$: Subscription;
 
   currentLang: string;
+  questionProgress$: Observable<{ current: number, total: number }>;
 
   constructor(
     private router: Router,
     private translateService: TranslateService,
-    private backendService: BackendService,
-    private questionService: QuestionService
+    private questionService: QuestionService,
+    private answerService: AnswerService
   ) {
     this.reset();
 
@@ -35,6 +36,8 @@ export class FlowControlService {
       .subscribe(() => {
         this.reset();
       });
+
+    this.questionProgress$ = this.questionService.questionProgress$;
   }
 
   setLang(lang: string) {
@@ -45,11 +48,25 @@ export class FlowControlService {
   reset() {
     this.router.navigate(['/']);
     this.setLang(environment.mainLang);
-    this.backendService.save(this.questionService.answers);
+    this.answerService.getUser();
     this.questionService.startRound();
   }
 
   isWelcomePage() {
     return this.router.isActive('welcome', false);
+  }
+
+  next() {
+    const next = this.questionService.nextQuestion;
+
+    if (next) {
+      this.router.navigate([next.route]);
+    } else {
+      this.reset();
+    }
+  }
+
+  answer(answer: any) {
+    this.answerService.answer(answer);
   }
 }

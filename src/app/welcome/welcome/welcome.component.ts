@@ -13,15 +13,13 @@ import { FlowControlService } from '../../core/flow-control/flow-control.service
 export class WelcomeComponent extends ScreenComponent implements OnInit {
   @HostBinding('class.screen') isScreen = true;
   @HostListener('click', ['$event.target']) onClick(btn) {
-    this.gotoNext();
+    this.answer();
   }
 
   constructor(
-    protected flowControlService: FlowControlService,
-    protected questionService: QuestionService,
-    protected router: Router
+    protected flowControlService: FlowControlService
   ) {
-    super(flowControlService, questionService, router);
+    super(flowControlService);
   }
 
   ngOnInit() {

@@ -13,7 +13,7 @@ lb-language-selector,
 .controls{
   z-index: 1;
   position: absolute;
-  bottom: 2*$grid-gutter;
+  bottom: 4*$grid-gutter;
 }
 
 lb-language-selector{
@@ -26,4 +26,15 @@ lb-language-selector{
 
 lb-countdown-timer{
   margin-bottom: $grid-gutter;
+}
+
+.start{
+  font-size: .75em;
+}
+
+lb-steps{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }

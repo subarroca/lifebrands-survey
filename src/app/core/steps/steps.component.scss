@@ -1,0 +1,11 @@
+@import 'src/assets/styles/vars';
+
+:host{
+  background: $primary-color;
+}
+
+.progress{
+  transition: width .5s;
+  background: $highlight-color;
+  height: $grid-gutter*2;
+}

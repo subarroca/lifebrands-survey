@@ -22,11 +22,9 @@ export class TagByWordComponent extends ScreenComponent implements OnInit {
 
   constructor(
     protected flowControlService: FlowControlService,
-    protected questionService: QuestionService,
-    protected photoService: PhotoService,
-    protected router: Router
+    protected photoService: PhotoService
   ) {
-    super(flowControlService, questionService, router);
+    super(flowControlService);
   }
 
   ngOnInit() {
@@ -68,7 +66,7 @@ export class TagByWordComponent extends ScreenComponent implements OnInit {
       this.selectedPhoto = undefined;
 
       if (this.isAllSelected) {
-        this.gotoNext();
+        this.answer(this.matches);
       }
     }
   }

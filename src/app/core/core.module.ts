@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LanguageSelectorModule } from './language-selector/language-selector.module';
 import { QuestionModule } from './question/question.module';
 import { FlowControlModule } from './flow-control/flow-control.module';
-import { BackendModule } from './backend/backend.module';
+import { AnswerModule } from './answer/answer.module';
+import { StepsModule } from './steps/steps.module';
 
 @NgModule({
   imports: [
@@ -11,10 +12,12 @@ import { BackendModule } from './backend/backend.module';
     LanguageSelectorModule,
     QuestionModule,
     FlowControlModule,
-    BackendModule,
+    AnswerModule,
+    StepsModule
   ],
   exports: [
-    LanguageSelectorModule
+    LanguageSelectorModule,
+    StepsModule
   ],
 })
 export class CoreModule { }
