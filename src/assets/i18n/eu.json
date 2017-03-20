@@ -1,23 +1,26 @@
 {
-  "welcome.title": "Kaixo!",
-  
   "btn.done": "egina",
   "btn.reset": "aukera ezabatu",
   "btn.start": "hasi",
   
+  "welcome.title": "Kaixo!",
+  
   "discovery.title": "Nola aurkitu duzu merkatua?",
   "discovery.imFan": "Argazkilaritza asko gustatzen zait",
   "discovery.lastYear": "lehengo urtetik",
-  "discovery.passingBy": "hemendik nenbilela",
+  "discovery.press": "prentsa",
+  "discovery.tv": "telebista",
   "discovery.socialNetwork": "sare sozial batean",
   "discovery.throughFriend": "lagun bati esker",
   
   "tagByWord.title": "Jar diezaiogun etiketa bat argazki bakoitzari",
-  "photo.anonymus": "Ezezaguna",
   "photo.word.classic": "klasikoa",
   "photo.word.creative": "sormena",
   "photo.word.extrovert": "irekia",
   "photo.word.inspiring": "inspiratzailea",
+  "photo.anonymus": "Ezezaguna",
+  
+  "favourite.title": "Zein argazkik irudikatzen zaitu hobe?",
   
   "willingToPay.title": "Etxera eramateko ordainduko zenukeen kopurua…",
   "willingToPay.dinner": "afari bat",
@@ -25,8 +28,6 @@
   "willingToPay.masterPiece": "artelan bat",
   "willingToPay.nothing": "ezer",
   "willingToPay.photoCamera": "argazki kamera bat",
-  
-  "favourite.title": "Zein argazkik irudikatzen zaitu hobe?",
 
   "email.title": "Zure argazkiari buruzko iritziak jakin nahi?",
   "email.subtitle": "Zure helbide elektronikoa eman",

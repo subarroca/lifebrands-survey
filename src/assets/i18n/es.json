@@ -2,32 +2,40 @@
   "btn.done": "hecho",
   "btn.reset": "borra la selección",
   "btn.start": "inicio",
+
+  "welcome.title": "Hola!",
+  
+  "discovery.title": "Has descubierto el market...",
   "discovery.imFan": "Es broma, no? Me encanta la fotografía",
   "discovery.lastYear": "el año pasado",
-  "discovery.passingBy": "pasando por aquí",
+  "discovery.press": "premsa",
+  "discovery.tv": "tele",
   "discovery.socialNetwork": "en una red social",
   "discovery.throughFriend": "por un amigo",
-  "discovery.title": "Has descubierto el market...",
-  "email.skip": "No quiero saberlo",
-  "email.title": "¿Quieres saber lo que han opinado otros sobre tu foto?",
-  "email.subtitle": "Déjanos tu email",
-  "favourite.title": "¿Cuál te representa mejor?",
-  "photo.anonymus": "Anónimo",
+
+  "tagByWord.title": "Pongámosle una etiqueta a cada foto",
   "photo.word.classic": "clásico",
   "photo.word.creative": "creativo",
   "photo.word.extrovert": "extrovertido",
   "photo.word.inspiring": "inspirador",
-  "tagByWord.title": "Pongámosle una etiqueta a cada foto",
-  "welcome.title": "Hola!",
+  "photo.anonymus": "Anónimo",
+  
+  "favourite.title": "¿Cuál te representa mejor?",
+  
+  "willingToPay.title": "Para llevártela a casa pagarías tanto como...",
   "willingToPay.dinner": "una cena",
   "willingToPay.exoticTrip": "un viaje exótico",
   "willingToPay.masterPiece": "una obra de arte",
   "willingToPay.nothing": "nada",
   "willingToPay.photoCamera": "una cámara de fotos",
-  "willingToPay.title": "Para llevártela a casa pagarías tanto como...",
+
+  "email.title": "¿Quieres saber lo que han opinado otros sobre tu foto?",
+  "email.subtitle": "Déjanos tu email",
+  "email.skip": "No quiero saberlo",
+  
+  "willingToRepeat.title": "¡Gracias!",
+  "willingToRepeat.subtitle": "Nos vemos de nuevo...",
   "willingToRepeat.dunno": "¿quién sabe?",
   "willingToRepeat.nextMarket": "en el próximo market",
-  "willingToRepeat.subtitle": "Nos vemos de nuevo...",
-  "willingToRepeat.theseDays": "estos días",
-  "willingToRepeat.title": "¡Gracias!"
+  "willingToRepeat.theseDays": "estos días"
 }

@@ -2,32 +2,40 @@
   "btn.done": "fet",
   "btn.reset": "esborra la selecció",
   "btn.start": "inici",
+
+  "welcome.title": "Iep!",
+  
+  "discovery.title": "Has descobert el mercat...",
   "discovery.imFan": "estàs de conya, oi? M'encanta la fotografia",
   "discovery.lastYear": "l'any passat",
-  "discovery.passingBy": "passant per aquí",
+  "discovery.press": "premsa",
+  "discovery.tv": "tele",
   "discovery.socialNetwork": "a les xarxes socials",
   "discovery.throughFriend": "a través d'un amic",
-  "discovery.title": "Has descobert el mercat...",
-  "email.skip": "No ho vull saber",
-  "email.title": "Vols saber què en pensen els altres de la teva foto?",
-  "email.subtitle": "Deixa'ns el teu correu",
-  "favourite.title": "Quina et representa millor?",
-  "photo.anonymus": "Anònim",
+
+  "tagByWord.title": "Etiqueta cada foto amb una paraula",
   "photo.word.classic": "clàssic",
   "photo.word.creative": "creatiu",
   "photo.word.extrovert": "extravertit",
   "photo.word.inspiring": "inspirador",
-  "tagByWord.title": "Etiqueta cada foto amb una paraula",
-  "welcome.title": "Iep!",
+  "photo.anonymus": "Anònim",
+  
+  "favourite.title": "Quina et representa millor?",
+  
+  "email.title": "Vols saber què en pensen els altres de la teva foto?",
+  "email.subtitle": "Deixa'ns el teu correu",
+  "email.skip": "No ho vull saber",
+  
+  "willingToPay.title": "Per endur-me-la a casa pagaria tant com...",
   "willingToPay.dinner": "un sopar",
   "willingToPay.exoticTrip": "un viatge exòtic",
   "willingToPay.masterPiece": "una obra d'art",
   "willingToPay.nothing": "res",
   "willingToPay.photoCamera": "una càmera de fotos",
-  "willingToPay.title": "Per endur-me-la a casa pagaria tant com...",
+  
+  "willingToRepeat.title": "Moltes gràcies!",
+  "willingToRepeat.subtitle": "Ens tornem a veure...",
   "willingToRepeat.dunno": "qui ho sap?",
   "willingToRepeat.nextMarket": "al proper market",
-  "willingToRepeat.subtitle": "Ens tornem a veure...",
-  "willingToRepeat.theseDays": "aquests dies",
-  "willingToRepeat.title": "Moltes gràcies!"
+  "willingToRepeat.theseDays": "aquests dies"
 }

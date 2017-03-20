@@ -2,32 +2,40 @@
   "btn.done": "done",
   "btn.reset": "delete selection",
   "btn.start": "start",
+
+  "welcome.title": "Hi!",
+
+  "discovery.title": "You discovered the market...",
   "discovery.imFan": "you kiddin'? I love photography",
   "discovery.lastYear": "last year",
-  "discovery.passingBy": "I was just  passing by",
+  "discovery.press": "press",
+  "discovery.tv": "tv",
   "discovery.socialNetwork": "I found it on a social network",
   "discovery.throughFriend": "through a friend",
-  "discovery.title": "You discovered the market...",
-  "email.skip": "I don't wanna know",
-  "email.title": "Wanna know what others thought about your photo?",
-  "email.subtitle": "Leave us your email",
-  "favourite.title": "Which one represents you best?",
-  "photo.anonymus": "Anonymus",
+
+  "tagByWord.title": "Let's assign a word to a photo",
   "photo.word.classic": "classic",
   "photo.word.creative": "creative",
   "photo.word.extrovert": "extrovert",
   "photo.word.inspiring": "inspiring",
-  "tagByWord.title": "Let's assign a word to a photo",
-  "welcome.title": "Hi!",
+  "photo.anonymus": "Anonymus",
+
+  "favourite.title": "Which one represents you best?",
+
+  "willingToPay.title": "To take it home you would pay as much as...",
   "willingToPay.dinner": "a dinner",
   "willingToPay.exoticTrip": "an exotic trip",
   "willingToPay.masterPiece": "an artwork",
   "willingToPay.nothing": "nothing",
   "willingToPay.photoCamera": "a photo camera",
-  "willingToPay.title": "To take it home you would pay as much as...",
+  
+  "email.title": "Wanna know what others thought about your photo?",
+  "email.subtitle": "Leave us your email",
+  "email.skip": "I don't wanna know",
+  
+  "willingToRepeat.title": "Thanks!",
+  "willingToRepeat.subtitle": "See you again...",
   "willingToRepeat.dunno": "who knows?",
   "willingToRepeat.nextMarket": "next market",
-  "willingToRepeat.subtitle": "See you again...",
-  "willingToRepeat.theseDays": "these days",
-  "willingToRepeat.title": "Thanks!"
+  "willingToRepeat.theseDays": "these days"
 }

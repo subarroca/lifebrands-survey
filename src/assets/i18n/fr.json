@@ -2,32 +2,40 @@
   "btn.done": "fait",
   "btn.reset": "éfacer la selection",
   "btn.start": "début",
-  "discovery.imFan": "Tu plaisantes ou quoi? J'adore la photographie",
-  "discovery.lastYear": "l'anné dernier",
-  "discovery.passingBy": "en passant",
-  "discovery.socialNetwork": "dans un résseau social",
-  "discovery.throughFriend": "par un ami",
+
+  "welcome.title": "Salut!",
+
   "discovery.title": "Tu as découvert le market...",
-  "email.skip": "Je ne veux pas le savoir",
-  "email.title": "Veux-tu savoir l'opinion des autres sur ta photo?",
-  "email.subtitle": "Laisse-nous ton émail",
-  "favourite.title": "Laquelle te réprésente mieux?",
-  "photo.anonymus": "Anonyme",
+  "discovery.imFan": "Tu blagues ou quoi? J'adore la photographie",
+  "discovery.lastYear": "l'année dernière",
+  "discovery.press": "presse",
+  "discovery.tv": "tv",
+  "discovery.socialNetwork": "dans un réseau social",
+  "discovery.throughFriend": "par un ami",
+  
+  "tagByWord.title": "Mettons une étiquette sur chaque photo",
   "photo.word.classic": "classique",
   "photo.word.creative": "créatif",
   "photo.word.extrovert": "extraverti",
   "photo.word.inspiring": "inspirateur",
-  "tagByWord.title": "Mettons une étiquette sur chaque photo",
-  "welcome.title": "Salut!",
+  "photo.anonymus": "Anonyme",
+  
+  "favourite.title": "Laquelle te représente mieux?",
+  
+  "willingToPay.title": "Pour l'emporter chez toi tu payerais autant que...",
   "willingToPay.dinner": "un dîner",
   "willingToPay.exoticTrip": "un voyage exotique",
   "willingToPay.masterPiece": "une pièce d'art",
   "willingToPay.nothing": "rien",
-  "willingToPay.photoCamera": "une camera de photo",
-  "willingToPay.title": "Pour l'emporter chez toi tu payerais autant que...",
+  "willingToPay.photoCamera": "une caméra de photo",
+  
+  "email.title": "Veux-tu savoir l'opinion des autres sur ta photo?",
+  "email.subtitle": "Laisse-nous ton émail",
+  "email.skip": "Je ne veux pas le savoir",
+  
+  "willingToRepeat.title": "Merci!",
+  "willingToRepeat.subtitle": "On se revoit...",
   "willingToRepeat.dunno": "qui le sait?",
   "willingToRepeat.nextMarket": "au prochain market",
-  "willingToRepeat.subtitle": "On ser revoit...",
-  "willingToRepeat.theseDays": "ces jours ci",
-  "willingToRepeat.title": "Merci!"
+  "willingToRepeat.theseDays": "ces jours-ci"
 }

@@ -22,8 +22,11 @@ export class DiscoveryComponent extends ScreenComponent implements OnInit {
       label: 'discovery.socialNetwork',
       id: 'socialNetwork'
     }, {
-      label: 'discovery.passingBy',
-      id: 'passingBy'
+      label: 'discovery.press',
+      id: 'press'
+    }, {
+      label: 'discovery.tv',
+      id: 'tv'
     }, {
       label: 'discovery.imFan',
       id: 'imFan'

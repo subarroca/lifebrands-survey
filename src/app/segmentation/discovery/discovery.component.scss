@@ -3,4 +3,8 @@
 
 button{
   margin-bottom: $grid-gutter;
+
+  &:nth-child(3){
+    margin-right: 0;
+  }
 }
