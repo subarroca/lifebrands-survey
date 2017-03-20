@@ -7,6 +7,7 @@ import { environment } from '../../../environments/environment';
 
 import { QuestionService } from '../question/question.service';
 import { AnswerService } from '../answer/answer.service';
+import { PhotoService } from '../../shared/photo/shared/photo.service';
 
 
 @Injectable()
@@ -21,9 +22,16 @@ export class FlowControlService {
     private router: Router,
     private translateService: TranslateService,
     private questionService: QuestionService,
-    private answerService: AnswerService
+    private answerService: AnswerService,
+    private photoService: PhotoService
   ) {
-    this.reset();
+
+    this.photoService.isLoaded$
+      .filter(isLoaded => isLoaded)
+      .first()
+      .subscribe(() => {
+        this.reset();
+      });
 
     this.countdown$ = Observable.fromEvent(document, 'click')
       .do(this.countdown$$ && this.countdown$$.unsubscribe)
@@ -48,6 +56,7 @@ export class FlowControlService {
   reset() {
     this.router.navigate(['/']);
     this.setLang(environment.mainLang);
+    this.photoService.reset();
     this.answerService.getUser();
     this.questionService.startRound();
   }

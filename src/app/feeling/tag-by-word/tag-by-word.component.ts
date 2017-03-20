@@ -30,16 +30,9 @@ export class TagByWordComponent extends ScreenComponent implements OnInit {
   ngOnInit() {
     super.ngOnInit();
 
-    this.photoService.isLoaded$
-      .filter(isLoaded => isLoaded)
-      .first()
-      .subscribe(() => {
-        this.photoService.reset();
-        this.photos = this.photoService.wordPhotos;
-        this.words = this.photoService.words;
-        this.reset();
-      });
-
+    this.photos = this.photoService.wordPhotos;
+    this.words = this.photoService.words;
+    this.reset();
   }
 
   get isAllSelected() {
