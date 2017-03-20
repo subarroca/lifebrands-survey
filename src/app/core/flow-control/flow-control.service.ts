@@ -6,6 +6,7 @@ import { TranslateService } from 'ng2-translate';
 import { environment } from '../../../environments/environment';
 
 import { QuestionService } from '../question/question.service';
+import { Question } from '../question/question';
 import { AnswerService } from '../answer/answer.service';
 import { PhotoService } from '../../shared/photo/shared/photo.service';
 
@@ -17,6 +18,7 @@ export class FlowControlService {
 
   currentLang: string;
   questionProgress$: Observable<{ current: number, total: number }>;
+  currentQuestion: Question;
 
   constructor(
     private router: Router,
@@ -51,6 +53,7 @@ export class FlowControlService {
   setLang(lang: string) {
     this.currentLang = lang;
     this.translateService.use(lang);
+    this.answerService.answer('lang', lang);
   }
 
   reset() {
@@ -66,16 +69,19 @@ export class FlowControlService {
   }
 
   next() {
-    const next = this.questionService.nextQuestion;
+    this.currentQuestion = this.questionService.nextQuestion;
+    console.log(this.currentQuestion);
 
-    if (next) {
-      this.router.navigate([next.route]);
+    if (this.currentQuestion) {
+      this.router.navigate([this.currentQuestion.route]);
     } else {
       this.reset();
     }
   }
 
   answer(answer: any) {
-    this.answerService.answer(answer);
+    if (answer && this.currentQuestion) {
+      this.answerService.answer(this.currentQuestion.id, answer);
+    }
   }
 }

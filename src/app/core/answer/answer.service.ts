@@ -27,10 +27,15 @@ export class AnswerService {
       });
   }
 
-  answer(answer?: any) {
+  answer(questionId: string, answer?: any) {
     if (answer) {
       this.http
-        .post(this.getUrl('save'), answer);
+        .post(this.getUrl('save'), {
+          id: this.userId,
+          answerId: questionId,
+          answerValue: answer.toString()
+        })
+        .subscribe(resp => true);
     }
   }
 
