@@ -13,6 +13,11 @@ button,
   margin-right: $grid-gutter;
   border: 0;
   padding: $grid-gutter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $font-size--base;
+  line-height: $font-size--base;
 
   &:last-child{
     margin-right: 0;
@@ -26,4 +31,8 @@ button,
 .button--round{
   border-radius: $tap-size/2;
   width: $button-size;
+}
+
+.button--big{
+  min-height: $button-size*2;
 }

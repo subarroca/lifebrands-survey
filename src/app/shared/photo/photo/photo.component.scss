@@ -42,7 +42,8 @@ figure{
 figcaption{
   background: $photo__background-color;
   position: relative;
-  top: -3*$grid-gutter;
+  // hardcoded. There should be a better way
+  top: -70px;
   display: inline-block;
 
   :host(.selected) &{

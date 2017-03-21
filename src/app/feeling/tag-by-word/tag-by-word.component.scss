@@ -13,7 +13,11 @@
   }
 }
 
+h1{
+  margin-bottom: 0;
+}
+
 .photos{
-  height: 50%;
-  padding-bottom: 2*$grid-gutter;
+  height: 45%;
+  padding-bottom: 4*$grid-gutter;
 }

@@ -2,6 +2,8 @@
   {{ 'tagByWord.title' | translate }}
 </h1>
 
+<h3>{{'tagByWord.subtitle' | translate}}</h3>
+
 <div
   class = photos
   fxLayout = row
@@ -26,7 +28,7 @@
     fxLayoutAlign = "center center">
     <div
       fxFlex = 35
-      class = "button word"
+      class = "button word button--big"
       [class.selected] = "selectedWord === word"
       [class.disabled] = isAlreadyMatchedWord(word)
       (click) = selectWord(word)

@@ -8,6 +8,7 @@
   fxLayoutWrap = wrap
   fxFlex>
   <button
+    class = button--big
     *ngFor="let answer of answers" 
     fxFlex = 30
     (click) = select(answer.id)>
