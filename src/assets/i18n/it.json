@@ -3,7 +3,7 @@
   "btn.reset": "cancella la selezione",
   "btn.start": "inizio",
 
-  "welcome.title": "Ciao!",
+  "welcome.title": "Comincia!",
   
   "discovery.title": "Hai scoperto il market...",
   "discovery.imFan": "stai scherzando, vero? Amo la fotografia",
@@ -14,6 +14,7 @@
   "discovery.throughFriend": "da un amico",
   
   "tagByWord.title": "Etichetta ogni foto con una parola",
+    "tagByWord.subtitle": "Tocca una foto e una parola per associarle",
   "photo.word.classic": "classico",
   "photo.word.creative": "creativo",
   "photo.word.extrovert": "estroverso",
@@ -29,9 +30,10 @@
   "willingToPay.nothing": "niente",
   "willingToPay.photoCamera": "fotocamera",
   
-  "email.title": "Vuoi sapere cosa pensano gli altri della tua foto?",
-  "email.subtitle": "Lasciaci il tuo indirizzo",
-  "email.skip": "Non mi interessa",
+    "email.title": "Vuoi una polaroid?",
+    "email.subtitle": "Lasciaci il tuo indirizzo e partecipa nella lotteria",
+    "email.newsletter": "Voglio ricevere informazione di Utopia Markets",
+    "email.skip": "Non la voglio",
   
   "willingToRepeat.title": "Grazie mille!",
   "willingToRepeat.subtitle": "Ci rivediamo...",

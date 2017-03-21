@@ -3,7 +3,7 @@
   "btn.reset": "esborra la selecció",
   "btn.start": "inici",
 
-  "welcome.title": "Iep!",
+  "welcome.title": "Som-hi!",
   
   "discovery.title": "Has descobert el mercat...",
   "discovery.imFan": "estàs de conya, oi? M'encanta la fotografia",
@@ -14,6 +14,7 @@
   "discovery.throughFriend": "a través d'un amic",
 
   "tagByWord.title": "Etiqueta cada foto amb una paraula",
+    "tagByWord.subtitle": "Toca una foto i una paraula per emparellar-les",
   "photo.word.classic": "clàssic",
   "photo.word.creative": "creatiu",
   "photo.word.extrovert": "extravertit",
@@ -22,9 +23,10 @@
   
   "favourite.title": "Quina et representa millor?",
   
-  "email.title": "Vols saber què en pensen els altres de la teva foto?",
-  "email.subtitle": "Deixa'ns el teu correu",
-  "email.skip": "No ho vull saber",
+    "email.title": "Vols una polaroid?",
+    "email.subtitle": "Deixa'ns el teu correu i participa al sorteig",
+    "email.newsletter": "Vull rebre informació d'Utopia Markets",
+    "email.skip": "No la vull",
   
   "willingToPay.title": "Per endur-me-la a casa pagaria tant com...",
   "willingToPay.dinner": "un sopar",

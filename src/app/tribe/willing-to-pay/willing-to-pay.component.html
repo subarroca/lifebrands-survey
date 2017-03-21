@@ -11,7 +11,7 @@
   <button
     *ngFor="let answer of answers" 
     fxFlex = 30
-    (click) = select(answer.id)>
+    (click) = select(answer)>
     {{ answer.label | translate }}
   </button>
 </div>

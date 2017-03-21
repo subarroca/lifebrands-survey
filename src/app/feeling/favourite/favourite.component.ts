@@ -35,7 +35,7 @@ export class FavouriteComponent extends ScreenComponent implements OnInit {
   }
 
   selectPhoto(photo: Photo) {
-    this.photoService.selectFavourite(photo);
+    this.flowControlService.favourite = photo;
     this.answer(photo.id);
   }
 }

@@ -16,19 +16,24 @@ export class WillingToPayComponent extends ScreenComponent implements OnInit {
   answers = [
     {
       label: 'willingToPay.nothing',
-      id: 'nothing'
+      id: 'nothing',
+      priceTag: 'cheap',
     }, {
       label: 'willingToPay.dinner',
-      id: 'dinner'
+      id: 'dinner',
+      priceTag: 'cheap',
     }, {
       label: 'willingToPay.photoCamera',
-      id: 'photoCamera'
+      id: 'photoCamera',
+      priceTag: 'cheap',
     }, {
       label: 'willingToPay.exoticTrip',
-      id: 'exoticTrip'
+      id: 'exoticTrip',
+      priceTag: 'expensive',
     }, {
       label: 'willingToPay.masterPiece',
-      id: 'masterPiece'
+      id: 'masterPiece',
+      priceTag: 'expensive',
     }];
 
 
@@ -51,7 +56,8 @@ export class WillingToPayComponent extends ScreenComponent implements OnInit {
       });
   }
 
-  select(id: string) {
-    this.answer(id);
+  select(answer) {
+    this.flowControlService.priceTag = answer.priceTag;
+    this.answer(answer.id);
   }
 }

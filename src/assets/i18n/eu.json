@@ -3,7 +3,7 @@
   "btn.reset": "aukera ezabatu",
   "btn.start": "hasi",
   
-  "welcome.title": "Kaixo!",
+  "welcome.title": "Hasi!",
   
   "discovery.title": "Nola aurkitu duzu merkatua?",
   "discovery.imFan": "Argazkilaritza asko gustatzen zait",
@@ -14,6 +14,7 @@
   "discovery.throughFriend": "lagun bati esker",
   
   "tagByWord.title": "Jar diezaiogun etiketa bat argazki bakoitzari",
+    "tagByWord.subtitle": "Toca una foto i una palabra para emparejarlas",
   "photo.word.classic": "klasikoa",
   "photo.word.creative": "sormena",
   "photo.word.extrovert": "irekia",
@@ -29,9 +30,10 @@
   "willingToPay.nothing": "ezer",
   "willingToPay.photoCamera": "argazki kamera bat",
 
-  "email.title": "Zure argazkiari buruzko iritziak jakin nahi?",
-  "email.subtitle": "Zure helbide elektronikoa eman",
-  "email.skip": "Ez dut jakin nahi",
+    "email.title": "Vols una polaroid?",
+    "email.subtitle": "Deixa'ns el teu correu i participa al sorteig",
+    "email.newsletter": "Vull rebre informació d'Utopia Markets",
+    "email.skip": "No la vull",
   
   "willingToRepeat.title": "Eskerrik asko!",
   "willingToRepeat.subtitle": "Hurrena arte…",

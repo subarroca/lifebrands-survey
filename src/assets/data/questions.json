@@ -35,15 +35,13 @@
     "contact": [
       {
         "id": "contact-email",
-        "route": "/contact/email",
-        "paintBackground": true
+        "route": "/contact/email"
       }
     ],
     "feedback": [
       {
         "id": "feedback-willingToRepeat",
-        "route": "/feedback/willing-to-repeat",
-        "paintBackground": true
+        "route": "/feedback/willing-to-repeat"
       }
     ]
   }

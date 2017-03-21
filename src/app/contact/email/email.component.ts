@@ -11,10 +11,17 @@ import { FlowControlService } from '../../core/flow-control/flow-control.service
   styleUrls: ['./email.component.scss']
 })
 export class EmailComponent extends ScreenComponent implements OnInit {
+  chosenColor;
 
   constructor(
     protected flowControlService: FlowControlService
   ) {
     super(flowControlService);
+  }
+
+  ngOnInit() {
+    super.ngOnInit();
+
+    this.chosenColor = this.flowControlService.calculatedColor;
   }
 }

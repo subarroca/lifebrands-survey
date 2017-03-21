@@ -9,6 +9,8 @@ import { QuestionService } from '../question/question.service';
 import { Question } from '../question/question';
 import { AnswerService } from '../answer/answer.service';
 import { PhotoService } from '../../shared/photo/shared/photo.service';
+import { Photo } from '../../shared/photo/shared/photo';
+import { ColorService } from '../color/color.service';
 
 
 @Injectable()
@@ -20,12 +22,16 @@ export class FlowControlService {
   questionProgress$: Observable<{ current: number, total: number }>;
   currentQuestion: Question;
 
+  priceTag: string;
+  private favouritePhoto: Photo;
+
   constructor(
     private router: Router,
     private translateService: TranslateService,
     private questionService: QuestionService,
     private answerService: AnswerService,
-    private photoService: PhotoService
+    private photoService: PhotoService,
+    private colorService: ColorService
   ) {
 
     this.photoService.isLoaded$
@@ -83,5 +89,14 @@ export class FlowControlService {
     if (answer && this.currentQuestion) {
       this.answerService.answer(this.currentQuestion.id, answer);
     }
+  }
+
+  get calculatedColor() {
+    return this.colorService.getColor(this.priceTag, this.favouritePhoto.word);
+  }
+
+  set favourite(photo: Photo) {
+    this.favouritePhoto = photo;
+    this.photoService.selectFavourite(photo);
   }
 }
