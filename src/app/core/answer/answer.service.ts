@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, URLSearchParams } from '@angular/http';
+import { Http } from '@angular/http';
 
 import { BehaviorSubject, Observable } from 'rxjs/Rx';
 
@@ -9,21 +9,27 @@ import { environment } from '../../../environments/environment';
 export class AnswerService {
   userId: string;
 
+  answerNums = {
+    'lang': 1,
+    'segmentation-discovery': 2,
+    'tribe-willingToPay': 3,
+    'feeling-tagByWord': 4,
+    'feeling-favourite': 5,
+    'contact-email': 6,
+    'feedback-willingToRepeat': 8,
+  };
+
   constructor(
     private http: Http
   ) { }
 
   getUser() {
-    const params: URLSearchParams = new URLSearchParams();
-    params.set('isProd', environment.production ? '1' : '0');
-
     this.http
-      .get(this.getUrl('getuserid'), {
-        search: params
+      .post(this.getUrl('getuserid'), {
+        isProd: environment.production
       })
       .subscribe(resp => {
         this.userId = resp.json().userId;
-        console.log(this.userId);
       });
   }
 
@@ -32,7 +38,7 @@ export class AnswerService {
       this.http
         .post(this.getUrl('save'), {
           id: this.userId,
-          answerId: questionId,
+          answerNum: this.answerNums[questionId],
           answerValue: answer.toString()
         })
         .subscribe(resp => true);
