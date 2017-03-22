@@ -9,12 +9,17 @@
 </div>  
 
 <div>
-  <h3>{{'email.subtitle' | translate}}</h3>
+  <label>{{'email.label' | translate}}</label>
   <input
     type = email>
 </div>
+<button
+  fxFlexAlign = center
+  (click) = submit()>
+  {{'email.submit' | translate}}
+</button>
 
-<h3>{{'email.newsletter' | translate}}</h3>
+<p>{{'email.newsletter' | translate}}</p>
 
 <button
   fxFlexAlign = center
