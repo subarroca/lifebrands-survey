@@ -41,7 +41,10 @@ export class FlowControlService {
         this.reset();
       });
 
-    this.countdown$ = Observable.fromEvent(document, 'click')
+    this.countdown$ = Observable.merge(
+      Observable.fromEvent(document, 'click'),
+      Observable.fromEvent(document, 'keyup')
+    )
       .do(this.countdown$$ && this.countdown$$.unsubscribe)
       .switchMap(() => Observable.timer(0, 1000)
         .take(environment.idleSecs + 1)
