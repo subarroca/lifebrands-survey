@@ -29,7 +29,7 @@
     "willingToPay.nothing": "Ez dakit",
   "willingToPay.photoCamera": "Argazki kamera bat",
 
-    "email.title": "Vols una Polaroid Snap",
+    "email.title": "Nahi duzu Polaroid Snap",
     "email.label": "Correu",
     "email.submit": "Participa",
     "email.newsletter": "Vull rebre informació",
@@ -39,5 +39,12 @@
   "willingToRepeat.subtitle": "Hurrena arte…",
   "willingToRepeat.dunno": "Nork daki?",
   "willingToRepeat.nextMarket": "Hurrengo merkatuan",
-  "willingToRepeat.theseDays": "Egun hauetan"
+  "willingToRepeat.theseDays": "Egun hauetan",
+  
+    "color.white":"zuria",
+    "color.black":"beltza",
+    "color.blue":"urdina",
+    "color.purple":"",
+    "color.yellow":"horia",
+    "color.pink":"arrosa"
 }

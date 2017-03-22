@@ -12,7 +12,7 @@ button,
   text-align: center;
   margin-right: $grid-gutter;
   border: 0;
-  padding: $grid-gutter;
+  padding: $grid-gutter 2*$grid-gutter;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +31,7 @@ button,
 .button--round{
   border-radius: $tap-size/2;
   width: $button-size;
+  padding: $grid-gutter;
 }
 
 .button--big{

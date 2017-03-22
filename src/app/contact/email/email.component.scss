@@ -1,6 +1,31 @@
 @import 'src/assets/styles/vars';
 
-.polaroid{
-  width: $tap-size;
-  height: $tap-size;
+.color{
+  padding: $grid-gutter 0 $grid-gutter $grid-gutter;
+}
+
+.white{
+  background: #fff;
+}
+
+.black{
+  background: #000;
+  color: #fff;
+}
+
+.purple{
+  background: #70f;
+  color: #fff;
+}
+
+.blue{
+  background: #0bf;
+}
+
+.pink{
+  background: #f6c;
+}
+
+.yellow{
+  background: #fc0;
 }

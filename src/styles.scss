@@ -41,7 +41,8 @@ h1{
 //   line-height: $font-size--h2;
 // }
 
-h3{
+h3,
+input{
   font-size: $font-size--h3;
   line-height: $font-size--h3;
 }
@@ -60,3 +61,21 @@ h3{
 //   font-size: $font-size--h6;
 //   line-height: $font-size--h6;
 // }
+
+p,
+label{
+  font-size: $font-size--base;
+  line-height: $font-size--base;
+}
+
+
+input[type = email]{
+  border: 2px solid $primary-color;
+  width: calc(100% - #{2*$grid-gutter});
+  padding: $grid-gutter;
+  margin-bottom: 2*$grid-gutter;
+}
+input[type = checkbox]{
+  transform: scale(3);
+  margin: 2*$grid-gutter;
+}

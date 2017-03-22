@@ -1,28 +1,36 @@
+<h1>
+  {{'email.title' | translate}}
+  <span
+    class = "color {{chosenColor.colorClass}}">
+    {{chosenColor.colorName | translate}}
+  </span> ?
+</h1>
+
+<span fxFlex></span>
+
 <div
-  fxLayout = row>
-  <h1>{{'email.title' | translate}}</h1>
-
-  <div
-    class = polaroid
-    [style.background] = chosenColor.color>
-  </div>
-</div>  
-
-<div>
+  fxLayout = column>
   <label>{{'email.label' | translate}}</label>
   <input
     type = email>
 </div>
+
+<label>
+  <input type="checkbox">
+  {{'email.newsletter' | translate}}
+</label>
+
 <button
   fxFlexAlign = center
+  class = button--big
   (click) = submit()>
   {{'email.submit' | translate}}
 </button>
 
-<p>{{'email.newsletter' | translate}}</p>
+<span fxFlex></span>
 
 <button
-  fxFlexAlign = center
+  fxFlexAlign = flex-end
   (click) = answer()>
   {{'email.skip' | translate}}
 </button>

@@ -39,5 +39,12 @@
   "willingToRepeat.subtitle": "On se revoit...",
   "willingToRepeat.dunno": "Qui le sait?",
   "willingToRepeat.nextMarket": "Au prochain market",
-  "willingToRepeat.theseDays": "Ces jours-ci"
+  "willingToRepeat.theseDays": "Ces jours-ci",
+  
+    "color.white":"blanche",
+    "color.black":"noire",
+    "color.blue":"bleue",
+    "color.purple":"pourpre",
+    "color.yellow":"jaune",
+    "color.pink":"rose"
 }

@@ -5,43 +5,43 @@ export class ColorService {
   private colors = [{
     priceTag: 'cheap',
     photoColor: 'classic',
-    color: '#fff',
+    colorClass: 'white',
     colorName: 'color.white'
   }, {
     priceTag: 'expensive',
     photoColor: 'classic',
-    color: '#000',
+    colorClass: 'black',
     colorName: 'color.black'
   }, {
     priceTag: 'cheap',
     photoColor: 'creative',
-    color: '#06f',
+    colorClass: 'blue',
     colorName: 'color.blue'
   }, {
     priceTag: 'expensive',
     photoColor: 'creative',
-    color: '#939',
-    colorName: 'color.violet'
+    colorClass: 'purple',
+    colorName: 'color.purple'
   }, {
     priceTag: 'cheap',
     photoColor: 'extrovert',
-    color: '#ff0',
+    colorClass: 'yellow',
     colorName: 'color.yellow'
   }, {
     priceTag: 'expensive',
     photoColor: 'extrovert',
-    color: '#f6f',
+    colorClass: 'pink',
     colorName: 'color.pink'
   }, {
     priceTag: 'cheap',
     photoColor: 'inspiring',
-    color: '#06f',
+    colorClass: 'blue',
     colorName: 'color.blue'
   }, {
     priceTag: 'expensive',
     photoColor: 'inspiring',
-    color: '#939',
-    colorName: 'color.violet'
+    colorClass: 'purple',
+    colorName: 'color.purple'
   }];
 
   constructor() { }

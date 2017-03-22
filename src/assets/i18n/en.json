@@ -39,5 +39,12 @@
   "willingToRepeat.subtitle": "See you again...",
   "willingToRepeat.dunno": "Who knows?",
   "willingToRepeat.nextMarket": "Next market",
-  "willingToRepeat.theseDays": "These days"
+  "willingToRepeat.theseDays": "These days",
+
+    "color.white":"white",
+    "color.black":"black",
+    "color.blue":"blue",
+    "color.purple":"purple",
+    "color.yellow":"yellow",
+    "color.pink":"pink"
 }

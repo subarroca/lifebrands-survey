@@ -39,5 +39,12 @@
   "willingToRepeat.subtitle": "Ci rivediamo...",
   "willingToRepeat.dunno": "Chi lo sa?",
   "willingToRepeat.nextMarket": "Nel prossimo market",
-  "willingToRepeat.theseDays": "In questi giorni"
+  "willingToRepeat.theseDays": "In questi giorni",
+  
+    "color.white":"bianca",
+    "color.black":"nera",
+    "color.blue":"azzurra",
+    "color.purple":"porpora",
+    "color.yellow":"gialla",
+    "color.pink":"rosa"
 }

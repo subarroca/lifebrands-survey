@@ -22,7 +22,7 @@
   
     "favourite.title": "Amb quina t'identifiques més?",
   
-    "email.title": "Entra al sorteig d'una Polaroid Snap",
+    "email.title": "Vols una Polaroid Snap",
     "email.label": "Correu",
     "email.submit": "Participa",
     "email.newsletter": "Vull rebre informació",
@@ -39,5 +39,12 @@
   "willingToRepeat.subtitle": "Ens tornem a veure...",
   "willingToRepeat.dunno": "Qui ho sap?",
   "willingToRepeat.nextMarket": "Al proper market",
-  "willingToRepeat.theseDays": "Aquests dies"
+  "willingToRepeat.theseDays": "Aquests dies",
+
+    "color.white": "blanca",
+    "color.black": "negra",
+    "color.blue": "blava",
+    "color.purple": "lila",
+    "color.yellow": "groga",
+    "color.pink": "rosa"
 }
