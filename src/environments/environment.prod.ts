@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
-  idleSecs: 20,
+  idleSecs: 60,
+  idleSecsWarning: 10,
   questionsUrl: 'assets/data/questions.json',
   photosUrl: 'assets/data/photos.json',
   photosPath: 'assets/photos',

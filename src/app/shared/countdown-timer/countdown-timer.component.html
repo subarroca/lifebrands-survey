@@ -1,5 +1,5 @@
 <div
   class = "button button--round"
-  [hidden] = "(countdown|async) > 5 || !(countdown|async)">
+  [hidden] = "!isVisible(countdown|async)">
   {{countdown | async}}
 </div>
