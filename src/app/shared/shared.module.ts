@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { CountdownTimerModule } from './countdown-timer/countdown-timer.module';
 import { PhotoModule } from './photo/photo.module';
@@ -11,12 +12,14 @@ import { LibrariesModule } from './libraries.module';
     CommonModule,
     PhotoModule,
     CountdownTimerModule,
-    LibrariesModule
+    LibrariesModule,
+    ReactiveFormsModule
   ],
   exports: [
     PhotoModule,
     CountdownTimerModule,
-    LibrariesModule
+    LibrariesModule,
+    ReactiveFormsModule
   ],
 })
 export class SharedModule { }

@@ -79,7 +79,6 @@ export class FlowControlService {
 
   next() {
     this.currentQuestion = this.questionService.nextQuestion;
-    console.log(this.currentQuestion);
 
     if (this.currentQuestion) {
       this.router.navigate([this.currentQuestion.route]);

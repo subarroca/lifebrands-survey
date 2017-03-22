@@ -8,29 +8,39 @@
 
 <span fxFlex></span>
 
-<div
-  fxLayout = column>
-  <label>{{'email.label' | translate}}</label>
-  <input
-    type = email>
-</div>
-
-<label>
-  <input type="checkbox">
-  {{'email.newsletter' | translate}}
-</label>
-
-<button
-  fxFlexAlign = center
-  class = button--big
-  (click) = submit()>
-  {{'email.submit' | translate}}
-</button>
+<form
+  [formGroup] = form >
+  <div
+    fxLayout = column>
+    <label>{{'email.label' | translate}}</label>
+    <input
+      type = email
+      formControlName = email>
+  </div>
+  
+  <label>
+    <input
+      type="checkbox"
+      formControlName = newsletter>
+    {{'email.newsletter' | translate}}
+  </label>
+  
+  <div
+    fxLayout = row
+    fxLayoutAlign = "center center">
+    <button
+      class = button--big
+      (click) = answer()>
+      {{'email.submit' | translate}}
+    </button>
+  </div>
+</form>
 
 <span fxFlex></span>
 
-<button
+<span
+  class = button
   fxFlexAlign = flex-end
   (click) = answer()>
   {{'email.skip' | translate}}
-</button>
+</span>
