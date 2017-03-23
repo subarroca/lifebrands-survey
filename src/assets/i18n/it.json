@@ -1,10 +1,10 @@
-{
+﻿{
   "btn.done": "Fatto",
   "btn.reset": "Cancella la selezione",
   "btn.start": "Inizio",
 
   "welcome.title": "Comincia!",
-  
+
   "discovery.title": "Hai scoperto l'UtopiaPhotoMarket...",
   "discovery.imFan": "Stai scherzando, vero? Amo la fotografia!",
   "discovery.lastYear": "L'anno scorso",
@@ -12,39 +12,39 @@
   "discovery.tv": "TV",
   "discovery.socialNetwork": "Sulle reti sociali",
   "discovery.throughFriend": "Da un amico",
-  
-    "tagByWord.title": "Tocca una foto e una parola per associarle",
+
+  "tagByWord.title": "Tocca una foto e una parola per associarle",
   "photo.word.classic": "Classico",
   "photo.word.creative": "Creativo",
   "photo.word.extrovert": "Estroverso",
   "photo.word.inspiring": "Ispiratore",
   "photo.anonymus": "Anonimo",
-  
-    "favourite.title": "Con quale ti identifichi di più?",
+
+  "favourite.title": "Con quale ti identifichi di più?",
 
   "willingToPay.title": "Per portartela a casa pagheresti tanto quanto...",
   "willingToPay.dinner": "Una cena",
   "willingToPay.exoticTrip": "Un viaggio esotico",
   "willingToPay.masterPiece": "Un’opera d'arte",
-    "willingToPay.nothing": "Non lo so",
+  "willingToPay.nothing": "Non lo so",
   "willingToPay.photoCamera": "Fotocamera",
-  
-    "email.title": "Vuoi una Polaroid Snap",
-    "email.label": "Indirizzo",
-    "email.submit": "Partecipa",
-    "email.newsletter": "Voglio ricevere informazione",
-    "email.skip": "Non la voglio",
-  
+
+  "email.title": "Vuoi una Polaroid Snap",
+  "email.label": "Indirizzo",
+  "email.submit": "Partecipa",
+  "email.newsletter": "Voglio ricevere informazione",
+  "email.skip": "Non mi interessa",
+
   "willingToRepeat.title": "Grazie mille!",
   "willingToRepeat.subtitle": "Ci rivediamo...",
   "willingToRepeat.dunno": "Chi lo sa?",
-  "willingToRepeat.nextMarket": "Nel prossimo market",
+  "willingToRepeat.nextMarket": "Al prossimo market",
   "willingToRepeat.theseDays": "In questi giorni",
-  
-    "color.white":"bianca",
-    "color.black":"nera",
-    "color.blue":"azzurra",
-    "color.purple":"porpora",
-    "color.yellow":"gialla",
-    "color.pink":"rosa"
+
+  "color.white":"bianca",
+  "color.black":"nera",
+  "color.blue":"azzurra",
+  "color.purple":"porpora",
+  "color.yellow":"gialla",
+  "color.pink":"rosa"
 }

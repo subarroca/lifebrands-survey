@@ -2,9 +2,9 @@
   "btn.done": "Egina",
   "btn.reset": "Aukera ezabatu",
   "btn.start": "Hasi",
-  
+
   "welcome.title": "Hasi!",
-  
+
   "discovery.title": "Nola aurkitu duzu UtopiaPhotoMarket?",
   "discovery.imFan": "Argazkilaritza asko gustatzen zait!",
   "discovery.lastYear": "Lehengo urtetik",
@@ -12,39 +12,39 @@
   "discovery.tv": "Telebista",
   "discovery.socialNetwork": "Sare sozial batean",
   "discovery.throughFriend": "Lagun bati esker",
-  
-    "tagByWord.title": "Toca una foto i una paraula per emparellar-les",
+
+  "tagByWord.title": "Argazki bakoitza hitz batekin lotu klik eginez",
   "photo.word.classic": "Klasikoa",
   "photo.word.creative": "Sormena",
   "photo.word.extrovert": "Irekia",
   "photo.word.inspiring": "Inspiratzailea",
   "photo.anonymus": "Ezezaguna",
-  
-    "favourite.title": "¿Con cuál te identificas más?",
-  
+
+  "favourite.title": "Zein argazkik irudikatzen zaitu hobe?",
+
   "willingToPay.title": "Etxera eramateko ordainduko zenukeen kopurua…",
   "willingToPay.dinner": "Afari bat",
   "willingToPay.exoticTrip": "Bidaia exotiko bat",
   "willingToPay.masterPiece": "Artelan bat",
-    "willingToPay.nothing": "Ez dakit",
+  "willingToPay.nothing": "Ez dakit",
   "willingToPay.photoCamera": "Argazki kamera bat",
 
-    "email.title": "Nahi duzu Polaroid Snap",
-    "email.label": "Correu",
-    "email.submit": "Participa",
-    "email.newsletter": "Vull rebre informació",
-    "email.skip": "No la vull",
-  
+  "email.title": "Nahi duzu Polaroid Snap",
+  "email.label": "Helbide elektronikoa",
+  "email.submit": "Parte hartu",
+  "email.newsletter": "Informazioa jaso nahi dut",
+  "email.skip": "Ez dut nahi",
+
   "willingToRepeat.title": "Eskerrik asko!",
   "willingToRepeat.subtitle": "Hurrena arte…",
   "willingToRepeat.dunno": "Nork daki?",
   "willingToRepeat.nextMarket": "Hurrengo merkatuan",
   "willingToRepeat.theseDays": "Egun hauetan",
-  
-    "color.white":"zuria",
-    "color.black":"beltza",
-    "color.blue":"urdina",
-    "color.purple":"",
-    "color.yellow":"horia",
-    "color.pink":"arrosa"
+
+  "color.white":"zuria",
+  "color.black":"beltza",
+  "color.blue":"urdina",
+  "color.purple":"morea",
+  "color.yellow":"horia",
+  "color.pink":"arrosa"
 }
