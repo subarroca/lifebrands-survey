@@ -39,7 +39,7 @@ export class AnswerService {
         .post(this.getUrl('save'), {
           id: this.userId,
           answerNum: this.answerNums[questionId],
-          answerValue: answer.toString()
+          answerValue: JSON.stringify(answer)
         })
         .subscribe(resp => true);
     }
