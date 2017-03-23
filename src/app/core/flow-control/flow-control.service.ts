@@ -59,15 +59,17 @@ export class FlowControlService {
     this.questionProgress$ = this.questionService.questionProgress$;
   }
 
-  setLang(lang: string) {
+  setLang(lang: string, shouldInform = true) {
     this.currentLang = lang;
     this.translateService.use(lang);
-    this.answerService.answer('lang', lang);
+    if (shouldInform) {
+      this.answerService.answer('lang', lang);
+    }
   }
 
   reset() {
     this.router.navigate(['/']);
-    this.setLang(environment.mainLang);
+    this.setLang(environment.mainLang, false);
     this.photoService.reset();
     this.answerService.getUser();
     this.questionService.startRound();
